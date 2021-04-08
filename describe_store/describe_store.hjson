@@ -1,7 +1,7 @@
 {
   "input": {
+    // "root_folder": "/var/mitto/store",
     "use": "describe_store.iov2#StoreMetaInput"
-    // "root_folder": "/var/mitto/store"
   },
   "output": {
     "dbo": "postgresql://localhost/analytics",
