@@ -1,0 +1,3 @@
+{
+  "text": "Job Complete!: ${system['fqdn']} - ${job['title']}\nhttps://${system['fqdn']}/#!/job/${job['id']}"
+}

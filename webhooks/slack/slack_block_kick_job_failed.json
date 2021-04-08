@@ -1,0 +1,18 @@
+{
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": ":rotating_light: Mitto Job Failed!"
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "Mitto URL: https://${system['fqdn']}\nJob Title: ${job['title']}\nJob URL: https://${system['fqdn']}/#!/job/${job['id']}"
+      }
+    }
+  ]
+}
