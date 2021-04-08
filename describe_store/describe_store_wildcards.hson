@@ -1,6 +1,6 @@
 {
   "input": {
-    // "root_folder": "/home/ubuntu/zuar/mitto/store",
+    // "root_folder": "/var/mitto/store",
     "wild_card": "foo*",
     "use": "describe_store.iov2#StoreMetaInput"
   },

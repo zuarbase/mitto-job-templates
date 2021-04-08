@@ -1,7 +1,13 @@
 {
   "input": {
     "use": "describe_store.iov2#StoreMetaInput"
-    // "root_folder": "/home/ubuntu/zuar/mitto/store"
+    // "root_folder": "/var/mitto/store"
+  },
+  "output": {
+    "dbo": "postgresql://localhost/analytics",
+    "schema": "describe_store",
+    "tablename": "all_stores",
+    "use": "call:mitto.iov2.db#todb"
   },
   "steps": [
     {
@@ -29,11 +35,5 @@
     {
       "use": "mitto.iov2.steps#CollectMeta"
     }
-  ],
-  "output": {
-    "dbo": "postgresql://localhost/analytics",
-    "schema": "describe_store",
-    "tablename": "all_stores",
-    "use": "call:mitto.iov2.db#todb"
-  }
+  ]
 }

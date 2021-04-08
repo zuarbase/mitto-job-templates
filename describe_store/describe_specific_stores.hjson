@@ -1,5 +1,6 @@
 {
   "input": {
+    // "root_folder": "/var/mitto/store",
     "stores": [
       "/var/mitto/store/{store_name}"
     ],
