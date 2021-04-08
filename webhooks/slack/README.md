@@ -1,0 +1,1 @@
+The JSON files in this directory are POST request body templates that leverage [Slack's incoming webhooks](https://api.slack.com/messaging/webhooks) functionality.
