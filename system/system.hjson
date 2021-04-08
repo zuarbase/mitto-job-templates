@@ -1,0 +1,8 @@
+{
+    // job type should be `system`
+    // writes to a file named `system_status.jsonl`
+    "json_file": "system_status",
+    "max_disk": 90,
+    "max_memory": 90,
+    "write_json": "true"
+}

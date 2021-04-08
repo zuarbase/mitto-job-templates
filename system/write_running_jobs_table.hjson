@@ -1,0 +1,50 @@
+{
+    // this job needs to run AFTER the job that writes the main system status table
+    "input": {
+        "source": "/var/mitto/data/system_status.jsonl",
+        "use": "flatfile.iov2#JsonlInput"
+    },
+    "output": {
+        "dbo": "postgresql://localhost/analytics",
+        "schema": "system_monitor",
+        "tablename": "running_jobs",
+        "use": "call:mitto.iov2.db#todb"
+    },
+    "steps": [
+        {
+            "use": "mitto.iov2.steps#Input",
+            "transforms": [
+                {
+                    "use": "mitto.iov2.transform#PluckV2Transform",
+                    "jpath": "$.running_jobs[*]",
+                    "members": [
+                        {
+                            "name": "system_status_id",
+                            "value": "$.id"
+                        }
+                    ]
+                },
+                {
+                    "use": "mitto.iov2.transform#ExtraColumnsTransform"
+                },
+                {
+                    "use": "mitto.iov2.transform#ColumnsTransform"
+                }
+            ]
+        },
+        {
+            "use": "mitto.iov2.steps#CreateTable"
+        },
+        {
+            "use": "mitto.iov2.steps#Output",
+            "transforms": [
+                {
+                    "use": "mitto.iov2.transform#FlattenTransform"
+                }
+            ]
+        },
+        {
+            "use": "mitto.iov2.steps#CollectMeta"
+        }
+    ]
+}
