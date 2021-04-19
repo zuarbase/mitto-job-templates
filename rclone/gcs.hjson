@@ -1,0 +1,19 @@
+{
+    "command": "copy",
+    "credentials": null,
+    "rclone_flags": [
+        {
+            "flag": "--gcs-project-number",
+            "value": "{project_number}"
+        },
+        {
+            "flag": "--gcs-service-account-file",
+            "value": "/var/mitto/data/{service_account_json_file}.json"
+        }
+    ],
+    "targets": {
+        "source": ":gcs:{bucket}/{path/to/file}",
+        "destination": "/var/mitto/data/{file}"
+    },
+    "timeout_seconds": 18000
+}

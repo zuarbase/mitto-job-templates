@@ -1,0 +1,27 @@
+{
+    "command": "copy",
+    "credentials": null,
+    "rclone_flags": [
+        {
+            "flag": "--s3-provider",
+            "value": "AWS"
+        },
+        {
+            "flag": "--s3-secret-access-key",
+            "value": "{secret-access-key}"
+        },
+        {
+            "flag": "--s3-access-key-id",
+            "value": "{access-key-id}"
+        },
+        {
+            "flag": "--s3-region",
+            "value": "{region}"
+        }
+    ],
+    "targets": {
+        "destination": ":s3:{bucket-name}/{path/to/file/}",
+        "source": "/var/mitto/data/{local-file-name}"
+    },
+    "timeout_seconds": 18000
+}

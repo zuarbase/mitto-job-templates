@@ -1,0 +1,27 @@
+{
+    "command": "copy",
+    "credentials": null,
+    "rclone_flags": [
+        {
+            "flag": "--webdav-vendor",
+            "value": "sharepoint"
+        },
+        {
+            "flag": "--webdav-url",
+            "value": "https://{yourcompany}.sharepoint.com"
+        },
+        {
+            "flag": "--webdav-user",
+            "value": "{user@email.com}"
+        },
+        {
+            "flag": "--webdav-pass",
+            "value": "_eUx3MtnUtvXQtvfPdSkyGhHM-fxu6qK5sA"
+        }
+    ],
+    "targets": {
+        "source": ":webdav:{path/to/file}",
+        "destination": "/var/mitto/data"
+    },
+    "timeout_seconds": 18000
+}
