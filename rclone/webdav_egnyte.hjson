@@ -1,0 +1,23 @@
+{
+    "command": "copy",
+    "credentials": null,
+    "rclone_flags": [
+        {
+            "flag": "--webdav-url",
+            "value": "https://{yourcompany}.egnyte.com/webdav"
+        },
+        {
+            "flag": "--webdav-user",
+            "value": "{user@email.com}"
+        },
+        {
+            "flag": "--webdav-pass",
+            "value": "ftwmLfDxzj6D1TcYFxKfbh40SMsoyIEsjhRTYA"
+        }
+    ],
+    "targets": {
+        "destination": ":webdav:{path/to/folder}",
+        "source": "/var/mitto/data/test.txt"
+    },
+    "timeout_seconds": 18000
+}

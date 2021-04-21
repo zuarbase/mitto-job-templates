@@ -1,0 +1,15 @@
+{
+    "command": "copy",
+    "credentials": null,
+    "rclone_flags": [
+        {
+            "flag": "--box-token",
+            "value": "{\"access_token\": \"{access_token}\", \"token_type\": \"bearer\", \"refresh_token\": \"{refresh_token}\", \"expiry\": \"{expiry}"}"
+        }
+    ],
+    "targets": {
+        "destination": ":box:{/path/to/file/}",
+        "source": "/var/mitto/data/{local-file-name}"
+    },
+    "timeout_seconds": 18000
+}

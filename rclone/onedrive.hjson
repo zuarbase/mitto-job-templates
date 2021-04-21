@@ -1,0 +1,27 @@
+{
+    "command": "copy",
+    "credentials": null,
+    "rclone_flags": [
+        {
+            "flag": "--onedrive-token",
+            "value": "{\"access_token\":\"token\",\"token_type\":\"Bearer\",\"refresh_token\":\"token\",\"expiry\":\"2021-03-24T10:33:52.0571522+11:00\"}"
+        },
+        {
+            "flag": "--onedrive-drive-id",
+            "value": "ID"
+        },
+        {
+            "flag": "--onedrive-drive-type",
+            "value": "business"
+        },
+        {
+            "flag": "--onedrive-region",
+            "value": "global"
+        }
+    ],
+    "targets": {
+        "destination": "/var/mitto/data/",
+        "source": ":onedrive:/file.txt"
+    },
+    "timeout_seconds": 18000
+}

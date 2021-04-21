@@ -1,0 +1,23 @@
+{
+    "command": "copy",
+    "credentials": null,
+    "rclone_flags": [
+        {
+            "flag": "--sftp-key-file",
+            "value": "/var/mitto/etc/.ssh/private_key"
+        },
+        {
+            "flag": "--sftp-user",
+            "value": "USERNAME"
+        },
+        {
+            "flag": "--sftp-host",
+            "value": "sftp.hostname.com"
+        }
+    ],
+    "targets": {
+        "destination": ":sftp:path/to/folder/",
+        "source": "/var/mitto/data/text.csv"
+    },
+    "timeout_seconds": 18000
+}

@@ -1,0 +1,15 @@
+{
+    "command": "copy",
+    "credentials": null,
+    "rclone_flags": [
+        {
+            "flag": "--dropbox-token",
+            "value": "{token}"
+        }
+    ],
+    "targets": {
+        "destination": ":dropbox:{/path/to/file/}",
+        "source": "/var/mitto/data/{local-file-name}"
+    },
+    "timeout_seconds": 18000
+}
