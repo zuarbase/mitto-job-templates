@@ -12,7 +12,7 @@
 `gcs.hjson` - copy from google cloud storage to mitto  
 `onedrive.hjson` - copy from onedrive to mitto  
 `s3.hjson` - copy from mitto to s3 using programmatic access id/key  
-`sftp_with_ssh_key.hjson` - copy from sftp to mitto using ssh key. [REQUIRES MITTO SETUP](https://www.zuar.com/blog/mitto-and-rclone-custom-jobs/#sftp) 
+`sftp_with_ssh_key.hjson` - copy from sftp to mitto using ssh key. [REQUIRES MITTO SETUP](https://www.zuar.com/blog/mitto-and-rclone-custom-jobs/#sftp)  
 `webdav_egnyte.hjson` - copy from egnyte to mitto  
 `webdav_sharepoint.hjson` - copy from sharepoint to mitto  
   
