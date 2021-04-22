@@ -1,0 +1,6 @@
+{
+  "shell": true,
+  "cmd": "virtualenv -p /opt/mitto/pyenv/bin/python3 /var/mitto/data/mittoenv",
+  "exec": false,
+  "cmd_env": {}
+}

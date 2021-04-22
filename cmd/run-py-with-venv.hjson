@@ -1,0 +1,6 @@
+{
+  "cmd": "/var/mitto/data/{virtualenv_directory}/bin/python3 /var/mitto/data/{python_script}.py",
+  "cmd_env": {},
+  "exec": false,
+  "shell": true
+}

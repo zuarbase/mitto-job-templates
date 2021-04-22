@@ -1,0 +1,6 @@
+{
+    "cmd": "env > /var/mitto/data/env.txt",
+    "cmd_env": {},
+    "exec": false,
+    "shell": true
+}

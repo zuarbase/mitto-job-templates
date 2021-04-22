@@ -1,0 +1,6 @@
+{
+  "shell": true,
+  "cmd": "bash /var/mitto/data/add-deploy-key.sh {ssh key}",
+  "exec": false,
+  "cmd_env": {}
+}

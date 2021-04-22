@@ -1,0 +1,6 @@
+{
+  "cmd": "/var/mitto/data/mittoenv/bin/pip3 install pandas",
+  "cmd_env": {},
+  "exec": false,
+  "shell": true
+}

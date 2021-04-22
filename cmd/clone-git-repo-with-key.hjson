@@ -1,0 +1,8 @@
+{
+  "shell": true,
+  "cmd": "git clone git@github.com:{teamname}/{repo}.git /var/mitto/data/{repo}",
+  "exec": false,
+  "cmd_env": {
+    "GIT_SSH_COMMAND": "ssh -i /var/mitto/etc/.ssh/{ssh key}"
+  }
+}
