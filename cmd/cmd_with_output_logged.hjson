@@ -1,5 +1,5 @@
 {
-    "cmd": "env > /var/mitto/data/env.txt",
+    "cmd": "pwd > /var/mitto/data/pwd.log 2>&1",
     "cmd_env": {},
     "exec": false,
     "shell": true
