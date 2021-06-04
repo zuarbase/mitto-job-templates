@@ -1,4 +1,4 @@
-# Describe Store  
+# Describe Store templates
 
 `describe_store.hjson` - describe all stores  
 `describe_specific_stores.hjson` - describe specific stores  

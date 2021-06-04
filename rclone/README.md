@@ -1,4 +1,4 @@
-# Example Custom Rclone Configs  
+# Rclone job templates
   
 ## Instructions  
   
@@ -16,9 +16,9 @@
 `webdav_egnyte.hjson` - copy from egnyte to mitto  
 `webdav_sharepoint.hjson` - copy from sharepoint to mitto  
   
-### Links  
+## Mitto Documentation  
   
-[https://www.zuar.com/blog/mitto-and-rclone-custom-jobs/](https://www.zuar.com/blog/mitto-and-rclone-custom-jobs/) - blog discussing usage of these examples  
-[https://www.zuar.com/help/mitto/rclone/](https://www.zuar.com/help/mitto/rclone/) - mitto user documentation  
-[https://www.zuar.com/api/mitto/plugin/rclone/](https://www.zuar.com/api/mitto/plugin/rclone/) - mitto dev documentation  
+[https://www.zuar.com/blog/mitto-and-rclone-custom-jobs/](https://www.zuar.com/blog/mitto-and-rclone-custom-jobs/) - Zuar blog discussing usage of these examples  
+[https://www.zuar.com/help/mitto/rclone/](https://www.zuar.com/help/mitto/rclone/) - Mitto user documentation  
+[https://www.zuar.com/api/mitto/plugin/rclone/](https://www.zuar.com/api/mitto/plugin/rclone/) - Mitto dev documentation  
   

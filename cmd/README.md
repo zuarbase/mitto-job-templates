@@ -1,4 +1,4 @@
-# CMD Jobs   
+# cmd job templates
   
 `add-pkg-to-venv.hjson` - Add packages to an existing venv  
 `clone-git-repo-with-key.hjson` - Clone a git repo using an ssh key  
@@ -8,3 +8,5 @@
 `run-py-with-venv.hjson` - Run python script using existing venv  
 `set-up-ssh-key.hjson` - Move an ssh key to a private dir and set permissions  
   
+## Mitto Documentation
+[Command line](https://www.zuar.com/help/mitto/command-line/)

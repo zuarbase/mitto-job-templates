@@ -1,0 +1,34 @@
+{
+  // Optional list of file attachments
+  attachments: [
+    /var/mitto/data/new_test.csv
+    /var/mitto/data/another_test.xslx
+  ]
+  // Required credentials name or object to authenticate against SMTP server
+  credentials: my.email@mysite.com email
+  // Optional HTML email body
+  html: <h1>This is a test email...</h1>
+  // Optional bcc list
+  mail_bcc: [
+  ]
+  // Optional cc list
+  mail_cc: [
+  ]
+  // Required mail
+  mail_from: my.email@mysite.com
+  // Optional mail subject
+  mail_subject: Subject of the Email
+  // Required mail to list
+  mail_to: [
+    someone@hostname.com
+    frank@email.com
+  ]
+  // Optional SMTP port
+  port: 587
+  // Optional require TLS
+  require_tls: true
+  // Required email server
+  server: smtp.office365.com
+  // Required text email body
+  text: This is a test email...
+}

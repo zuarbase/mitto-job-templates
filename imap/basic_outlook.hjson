@@ -1,0 +1,13 @@
+{
+  // Required IMAP server name
+  server: smtp.office365.com
+  // Required credentials name or object to authenticate against IMAP server
+  credentials: email credential
+  // Optional label (folder location of emails)
+  label: inbox
+  // Optional output filename format
+  filename_format: ""
+  // Optional list of file extensions (e.g. pdf, jpg) to be downloaded
+  matching_extensions: [
+  ]
+}
