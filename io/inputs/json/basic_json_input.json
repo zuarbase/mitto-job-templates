@@ -1,0 +1,44 @@
+{
+  "name": "json_zuar_pets_json",
+  "title": "[JSON] zuar_pets.json",
+  "type": "io",
+  "conf": {
+    "input": {
+      "use": "flatfile.iov2#JsonInput",
+      "source": "/var/mitto/data/zuar_pets.json"
+    },
+    "output": {
+      "tablename": "zuar_pets",
+      "use": "call:mitto.iov2.db#todb",
+      "schema": "json",
+      "dbo": "postgresql://localhost/analytics"
+    },
+    "steps": [
+      {
+        "use": "mitto.iov2.steps#Input",
+        "transforms": [
+          {
+            "use": "mitto.iov2.transform#ExtraColumnsTransform"
+          },
+          {
+            "use": "mitto.iov2.transform#ColumnsTransform"
+          }
+        ]
+      },
+      {
+        "use": "mitto.iov2.steps#CreateTable"
+      },
+      {
+        "use": "mitto.iov2.steps#Output",
+        "transforms": [
+          {
+            "use": "mitto.iov2.transform#FlattenTransform"
+          }
+        ]
+      },
+      {
+        "use": "mitto.iov2.steps#CollectMeta"
+      }
+    ]
+  }
+}
