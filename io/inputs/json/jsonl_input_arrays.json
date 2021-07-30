@@ -1,0 +1,54 @@
+{
+  "name": "json_zuar_pets_jsonl_pets",
+  "title": "[JSONL] zuar_pets.jsonl - pets[*]",
+  "type": "io",
+  "conf": {
+    "input": {
+      "source": "/var/mitto/data/zuar_pets.jsonl",
+      "use": "flatfile.iov2#JsonlInput"
+    },
+    "output": {
+      "dbo": "postgresql://localhost/analytics",
+      "schema": "jsonl",
+      "tablename": "zuar_pets__pets",
+      "use": "call:mitto.iov2.db#todb"
+    },
+    "steps": [
+      {
+        "use": "mitto.iov2.steps#Input",
+        "transforms": [
+          {
+            "use": "mitto.iov2.transform#PluckV2Transform",
+            "jpath": "$.pets[*]",
+            "members": [
+              {
+                "name": "person_id",
+                "value": "$.id"
+              }
+            ]
+          },
+          {
+            "use": "mitto.iov2.transform#ExtraColumnsTransform"
+          },
+          {
+            "use": "mitto.iov2.transform#ColumnsTransform"
+          }
+        ]
+      },
+      {
+        "use": "mitto.iov2.steps#CreateTable"
+      },
+      {
+        "use": "mitto.iov2.steps#Output",
+        "transforms": [
+          {
+            "use": "mitto.iov2.transform#FlattenTransform"
+          }
+        ]
+      },
+      {
+        "use": "mitto.iov2.steps#CollectMeta"
+      }
+    ]
+  }
+}
