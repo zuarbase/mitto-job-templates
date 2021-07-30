@@ -1,0 +1,3 @@
+{
+    "text": "*SYSTEM MONITOR WARNING:* - *memory:* ${job['status']['kvp']['current memory usage']} *disk:* ${job['status']['kvp']['current disk usage']} - https://${system['fqdn']}"
+}
