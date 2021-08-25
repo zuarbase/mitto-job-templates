@@ -1,0 +1,7 @@
+{
+  "credentials": "credential_name",
+  "target_id": "uuid",
+  "max_retries": 5,
+  "max_wait": 30,
+  "default_rate_limit_delay": 120
+}
