@@ -1,0 +1,32 @@
+{
+  "input": {
+    "dbo": "postgresql://localhost/analytics",
+    "query": "SELECT 1 as id, 'Justin' as name\nUNION ALL\nSELECT 2 as id, 'Andy' as name",
+    "use": "query.io#QueryInput"
+  },
+  "output": {
+    "delimiter": "\t",
+    "path": "/var/mitto/data/query_to_tsv_example.tsv",
+    "use": "call:mitto.iov2#tocsv"
+  },
+  "steps": [
+    {
+      "transforms": [
+        {
+          "rename_columns": false,
+          "use": "mitto.iov2.transform#ExtraColumnsTransform",
+          "include_empty_columns": true
+        }
+      ],
+      "use": "mitto.iov2.steps#Input"
+    },
+    {
+      "transforms": [
+        {
+          "use": "mitto.iov2.transform#FlattenTransform"
+        }
+      ],
+      "use": "mitto.iov2.steps#Output"
+    }
+  ]
+}
