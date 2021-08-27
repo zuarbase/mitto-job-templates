@@ -1,0 +1,55 @@
+{
+  "input": {
+    "use": "sfdc.iov2#SalesforceInput",
+    "credentials": "salesforce_credentials",
+    "sobject": "Account",
+    "upsert_field": "SystemModstamp"
+  },
+  "output": {
+    "use": "call:mitto.iov2.db#todb",
+    "schema": "salesforce",
+    "dbo": "postgresql://localhost/analytics",
+    "tablename": "account"
+  },
+  "steps": [
+    {
+      "use": "mitto.iov2.steps#MaxTimestamp",
+      "column": "system_modstamp"
+    },
+    {
+      "use": "mitto.iov2.steps.upsert#SetUpdatedAt"
+    },
+    {
+      "transforms": [
+        {
+          "use": "mitto.iov2.transform#ExtraColumnsTransform"
+        },
+        {
+          "use": "mitto.iov2.transform#ColumnsTransform"
+        }
+      ],
+      "use": "mitto.iov2.steps#Input"
+    },
+    {
+      "use": "mitto.iov2.steps#CreateTable"
+    },
+    {
+      "use": "mitto.iov2.steps.upsert#CreateTempTable"
+    },
+    {
+      "transforms": [
+        {
+          "use": "mitto.iov2.transform#FlattenTransform"
+        }
+      ],
+      "use": "mitto.iov2.steps#Output"
+    },
+    {
+      "use": "mitto.iov2.steps.upsert#SyncTempTable",
+      "key": "id"
+    },
+    {
+      "use": "mitto.iov2.steps#CollectMeta"
+    }
+  ]
+}
