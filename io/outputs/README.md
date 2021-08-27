@@ -1,9 +1,9 @@
 ## io job output templates
 
-- [database](database/) - Examples of Mitto `io` jobs outputting to a database table.
-- [delimited](delimited) - Examples of Mitto `io` jobs outputting to delimited files (e.g. csv, tsv, etc)
-- `json` - Examples of Mitto `io` jobs outputting to json files.
-- `jsonl` - Examples of Mitto `io` jobs outputting to json lines files.
+- [database](database/) - Examples of Mitto [io](/io) jobs outputting to a database table.
+- [delimited](delimited) - Examples of Mitto [io](/io) jobs outputting to delimited files (e.g. csv, tsv, etc)
+- [json](json) - Examples of Mitto [io](/io) jobs outputting to json files.
+- [jsonl](jsonl) - Examples of Mitto [io](/io) jobs outputting to json lines files.
 
 ## Mitto Documentation
 - [io jobs](https://www.zuar.com/help/mitto/io-jobs/)

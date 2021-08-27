@@ -1,14 +1,14 @@
 # Excel input examples
 
-- `basic_excel_input.json` - Example Mitto `io` job using an Excel file as an input and a database table as an output.
+- [basic_excel_input.json](basic_excel_input.json) - Example Mitto `io` job using an Excel file as an input and a database table as an output.
 
 ## Mitto Documentation
-- Mitto Excel Input - https://www.zuar.com/help/mitto/excel/
+- [Mitto Excel Input](https://www.zuar.com/help/mitto/excel/)
 
 ## Example Data
-cogs.xlsx - https://github.com/zuarbase/data/blob/master/cogs.xlsx
+[cogs.xlsx](https://github.com/zuarbase/data/blob/master/cogs.xlsx)
 
-The `basic_excel_input.json` job creates this database table:
+The [basic_excel_input.json](basic_excel_input.json) job creates this database table:
 
 | \_\_index\_\_ | date | state | cogs |
 | :--- | :--- | :--- | :--- |
