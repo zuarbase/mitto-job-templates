@@ -1,0 +1,16 @@
+{
+  dbo: postgresql://localhost/analytics
+  credentials: null
+  sql:
+    '''
+    DROP TABLE IF EXISTS test.test_select_1;
+    CREATE TABLE test.test_select_1 AS
+    SELECT 1 AS id;
+    '''
+  parameters: {
+  }
+  kwargs: {
+  }
+  transaction: true
+  split: false
+}

@@ -1,0 +1,14 @@
+{
+  dbo: postgresql://localhost/analytics
+  credentials: null
+  sql:
+    '''
+    SELECT 1;
+    '''
+  parameters: {
+  }
+  kwargs: {
+  }
+  transaction: true
+  split: false
+}
