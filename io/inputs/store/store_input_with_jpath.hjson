@@ -1,0 +1,9 @@
+{
+  input: {
+    name: pets
+    use: mitto.iov2.input#StoreInput
+  }
+  output: {
+
+  }
+}

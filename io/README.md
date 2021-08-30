@@ -1,8 +1,8 @@
 # io job templates
 
-- `inputs` - Examples related to Mitto `io` job inputs (e.g. database, files, APIs).
-- `outputs` - Examples related to Mitto `io` job outputs (e.g. database, files, etc).
-- `steps` - Examples related to Mitto `io` job steps (truncate and load vs upsert, etc).
+- [inputs](inputs) - Examples related to Mitto [io](/io) job inputs (e.g. database, files, APIs).
+- [outputs](outputs) - Examples related to Mitto [io](/io) job outputs (e.g. database, files, etc).
+- [steps](steps) - Examples related to Mitto [io](/io) job steps (truncate and load vs upsert, etc).
 
 ## Mitto Documentation
 - [io jobs](https://www.zuar.com/help/mitto/io-jobs/)

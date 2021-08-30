@@ -7,18 +7,18 @@
 
 ## Files  
 
-`box.hjson` - copy from mitto to box  
-`dropbox.hjson` - copy from mitto to dropbox  
-`gcs.hjson` - copy from google cloud storage to mitto  
-`onedrive.hjson` - copy from onedrive to mitto  
-`s3.hjson` - copy from mitto to s3 using programmatic access id/key  
-`sftp_with_ssh_key.hjson` - copy from sftp to mitto using ssh key. [REQUIRES MITTO SETUP](https://www.zuar.com/blog/mitto-and-rclone-custom-jobs/#sftp)  
-`webdav_egnyte.hjson` - copy from egnyte to mitto  
-`webdav_sharepoint.hjson` - copy from sharepoint to mitto  
+- [box.hjson](box.hjson) - copy from mitto to box
+- [dropbox.hjson](dropbox.hjson)) - copy from mitto to dropbox  
+- [gcs.hjson](gcs.hjson) - copy from google cloud storage to mitto
+- [onedrive.hjson](onedrive.hjson) - copy from onedrive to mitto  
+- [s3.hjson](s3.hjson) - copy from mitto to s3 using programmatic access id/key  
+- [sftp_with_ssh_key.hjson](sftp_with_ssh_key.hjson) - copy from sftp to mitto using ssh key. [REQUIRES MITTO SETUP](https://www.zuar.com/blog/mitto-and-rclone-custom-jobs/#sftp)  
+- [webdav_egnyte.hjson](webdav_egnyte.hjson) - copy from egnyte to mitto  
+- [webdav_sharepoint.hjson](webdav_sharepoint.hjson) - copy from sharepoint to mitto  
   
 ## Mitto Documentation  
   
-[https://www.zuar.com/blog/mitto-and-rclone-custom-jobs/](https://www.zuar.com/blog/mitto-and-rclone-custom-jobs/) - Zuar blog discussing usage of these examples  
-[https://www.zuar.com/help/mitto/rclone/](https://www.zuar.com/help/mitto/rclone/) - Mitto user documentation  
-[https://www.zuar.com/api/mitto/plugin/rclone/](https://www.zuar.com/api/mitto/plugin/rclone/) - Mitto dev documentation  
+- [Zuar blog discussing usage of these examples](https://www.zuar.com/blog/mitto-and-rclone-custom-jobs/)
+- [Mitto Rclone Help Documentation](https://www.zuar.com/help/mitto/rclone/)  
+- [Mitto Rclone API Documentation](https://www.zuar.com/api/mitto/plugin/rclone/)
   

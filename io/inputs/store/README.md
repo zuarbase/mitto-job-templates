@@ -1,11 +1,11 @@
 # Store input templates
 
-`basic_store_input.hjson` - Use a store as an input and output to database table.
-`store_input_with_jpath.hjson` - Using jpath, use a sublist from a store as an input and output to a database table.
+- [basic_store_input.hjson](basic_store_input.hjson) - Use a store as an input and output to database table.
+- [store_input_with_jpath.hjson](store_input_with_jpath.hjson) - Using jpath, use a sublist from a store as an input and output to a database table.
 
 ## Mitto Documentation
-- Mitto store - https://www.zuar.com/help/mitto/mitto-store/
-- Mitto store input - https://www.zuar.com/help/mitto/mitto-store-input/
+- [Mitto store](https://www.zuar.com/help/mitto/mitto-store/)
+- [Mitto store input](https://www.zuar.com/help/mitto/mitto-store-input/)
 
 ## Example Store
 Name: pets
