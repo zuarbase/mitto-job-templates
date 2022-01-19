@@ -15,6 +15,8 @@
 - [sftp_with_ssh_key.hjson](sftp_with_ssh_key.hjson) - copy from sftp to mitto using ssh key. [REQUIRES MITTO SETUP](https://www.zuar.com/blog/mitto-and-rclone-custom-jobs/#sftp)  
 - [webdav_egnyte.hjson](webdav_egnyte.hjson) - copy from egnyte to mitto  
 - [webdav_sharepoint.hjson](webdav_sharepoint.hjson) - copy from sharepoint to mitto  
+- [from_digital_ocean_space_to_mitto.hjson] (from_digital_ocean_space_to_mitto.hjson) - copy from Digital Ocean Space to mitto
+- [to_digital_ocean_space_from_mitto.hjson] (to_digital_ocean_space_from_mitto.hjson) - copy from mitto to Digital Ocean Space
   
 ## Mitto Documentation  
   
